@@ -1,0 +1,45 @@
+{
+  "name": "typhonjs-npm-scripts-publish",
+  "version": "0.0.1",
+  "homepage": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish",
+  "description": "Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules and beyond.",
+  "license": "MPL-2.0",
+  "author": {
+    "name": "Mike Leahy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish/typhonjs-npm-scripts-publish.git"
+  },
+  "maintainers": [
+    {
+      "name": "Mike Leahy",
+      "email": "support@js.typhonrt.org"
+    }
+  ],
+  "dependencies": {
+    "fs-extra": "^0.26.5",
+    "in-publish": "^2.0.0",
+    "strip-json-comments": "^2.0.0"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "typhonjs",
+    "node",
+    "npm",
+    "script",
+    "prepublish",
+    "publish"
+  ],
+  "scripts": {
+    "test": "node ./test/scripts/test.js"
+  },
+  "files": [
+    "scripts"
+  ],
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish/issues"
+  }
+}
