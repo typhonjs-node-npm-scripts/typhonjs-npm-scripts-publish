@@ -1,8 +1,8 @@
 {
   "name": "typhonjs-npm-scripts-publish",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish",
-  "description": "Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules and beyond.",
+  "description": "Provides NPM scripts for pre-publish and publish actions for TyphonJS NPM modules and beyond.",
   "license": "MPL-2.0",
   "author": {
     "name": "Mike Leahy"
