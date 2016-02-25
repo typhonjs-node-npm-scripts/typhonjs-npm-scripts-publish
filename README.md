@@ -13,7 +13,7 @@ Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules 
 Runs all scripts defined in `npm-pre-publish.json` scripts entry, but only if pre-publish mode is true.
 Node / NPM currently has a bug (https://github.com/npm/npm/issues/10074) that will run the `prepublish` script when
 modules are installed or `npm pack` is executed. In these cases it is not desirable to run actual pre-publish
-actions. NPM module `in-publish` provides pre-publish detection.
+actions. NPM module [in-publish](https://www.npmjs.com/package/in-publish) provides pre-publish detection.
 
 `npm-pre-publish.json` must be defined in the root path and contains the following options:
 ```
