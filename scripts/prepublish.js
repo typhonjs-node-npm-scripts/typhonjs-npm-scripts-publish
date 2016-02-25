@@ -41,7 +41,7 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    if (typeof configInfo.publish !== 'object')
    {
       throw new Error(
-       "TyphonJS NPM script (prepublish) error: publish entry is not an object or is missing in "
+       "TyphonJS NPM script (prepublish) error: 'publish' entry is not an object or is missing in "
        + "'npm-scripts.json'.");
    }
 
@@ -49,7 +49,7 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    if (typeof configInfo.publish.prepublish !== 'object')
    {
       throw new Error(
-       "TyphonJS NPM script (prepublish) error: publish.prepublish entry is not an object or is missing in "
+       "TyphonJS NPM script (prepublish) error: 'publish.prepublish' entry is not an object or is missing in "
         + "'npm-scripts.json'.");
    }
 
@@ -59,13 +59,13 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    if (typeof prepublishConfig.scripts === 'undefined')
    {
       throw new Error(
-       "TyphonJS NPM script (prepublish) error: publish.prepublish.scripts entry is missing in 'npm-scripts.json'.");
+       "TyphonJS NPM script (prepublish) error: 'publish.prepublish.scripts' entry is missing in 'npm-scripts.json'.");
    }
 
    if (!Array.isArray(prepublishConfig.scripts))
    {
       throw new Error(
-       "TyphonJS NPM script (prepublish) error: publish.prepublish.scripts entry is not an array in "
+       "TyphonJS NPM script (prepublish) error: 'publish.prepublish.scripts' entry is not an array in "
         + "'npm-scripts.json'.");
    }
 
