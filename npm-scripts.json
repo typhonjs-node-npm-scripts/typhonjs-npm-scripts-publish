@@ -1,0 +1,11 @@
+/**
+ * You can provide comments in `npm-scripts.json`.
+ *
+ * The entry below is used in testing and is invoked in `./test/scripts/test.js`.
+ */
+{
+   "publish":
+   {
+      "prepublish": { "scripts": ["node ./test/scripts/fixture.js"] }
+   }
+}
