@@ -14,20 +14,22 @@ Node / NPM currently has a bug (https://github.com/npm/npm/issues/10074) that wi
 `prepublish` script when modules are installed or `npm pack` is executed. In these cases it is not desirable to run
 actual pre-publish actions. NPM module [in-publish](https://www.npmjs.com/package/in-publish) provides pre-publish detection and is used by this module to detect the actual pre-publish script action when `npm publish` is executed.
 
-This NPM modules runs all scripts defined in the `publish.prepublish.scripts` entry located in `npm-scripts.json` in the root path of a project. 
+This NPM module runs all scripts defined in the `publish.prepublish.scripts` entry located in `npm-scripts.json` in the root path of a project. 
+
+For a comprehensive ES6 build / testing NPM module please see [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test) as it combines this module for pre-publish detection along with [typhonjs-npm-scripts-build-babel](https://www.npmjs.com/package/typhonjs-npm-scripts-build-babel) and [typhonjs-npm-scripts-test-mocha](https://www.npmjs.com/package/typhonjs-npm-scripts-test-mocha). For a full listing of all TyphonJS NPM script modules available please see [typhonjs-node-npm](https://github.com/typhonjs-node-npm) organization on GitHub.
+
+------
 
 To configure the prepublish script provide this entry in `package.json` scripts entry:
 
 ```
   "devDependencies": {
-    "typhonjs-npm-scripts-publish": "^0.0.4"
+    "typhonjs-npm-scripts-publish": "^0.0.5"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
   },
 ```
-
-Please note that a collection of scripts for building / testing / publishing is available with the [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test) NPM module. For a full listing of all TyphonJS NPM script modules available please see [typhonjs-node-npm](https://github.com/typhonjs-node-npm) organization on GitHub.
 
 `npm-scripts.json` must be defined in the root path and contain an object hash `publish` with a `prepublish` hash
 with the following options:
@@ -44,3 +46,5 @@ Usually two tasks that are helpful when publishing ES6 NPM modules is ensuring a
    }
 }
 ```
+
+Please see associated TyphonJS NPM scripts modules for how to define test and build scripts or review the documentation for [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test).
