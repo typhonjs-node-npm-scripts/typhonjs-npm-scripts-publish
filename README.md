@@ -47,4 +47,4 @@ Usually two tasks that are helpful when publishing ES6 NPM modules is ensuring a
 }
 ```
 
-Please see associated TyphonJS NPM scripts modules for how to define test and build scripts or review the documentation for [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test).
+Please note that you can add comments to `npm-scripts.json`. Also please see associated TyphonJS NPM scripts modules for how to define test and build scripts or review the documentation for [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test).
