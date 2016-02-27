@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-npm-scripts-publish",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish",
   "description": "Provides NPM scripts for pre-publish and publish actions for TyphonJS NPM modules and beyond.",
   "license": "MPL-2.0",
@@ -18,9 +18,10 @@
     }
   ],
   "dependencies": {
-    "fs-extra": "^0.26.5",
-    "in-publish": "^2.0.0",
-    "strip-json-comments": "^2.0.0"
+    "fs-extra": "^0.x",
+    "in-publish": "^2.x",
+    "strip-json-comments": "^2.x",
+    "typhonjs-config-eslint": "^0.x"
   },
   "devDependencies": {
   },

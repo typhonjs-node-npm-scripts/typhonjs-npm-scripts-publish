@@ -18,7 +18,7 @@ var inPublish =   require('in-publish').inPublish();
 if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
 {
    var cp =                require('child_process');
-   var fs =                require('fs-extra');
+   var fs =                require('fs');
    var stripJsonComments = require('strip-json-comments');
 
    // Verify that `npm-scripts.json` exists.
