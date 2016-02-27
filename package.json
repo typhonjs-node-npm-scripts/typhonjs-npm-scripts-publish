@@ -20,10 +20,10 @@
   "dependencies": {
     "fs-extra": "^0.x",
     "in-publish": "^2.x",
-    "strip-json-comments": "^2.x",
-    "typhonjs-config-eslint": "^0.x"
+    "strip-json-comments": "^2.x"
   },
   "devDependencies": {
+    "typhonjs-config-eslint": "^0.x"
   },
   "keywords": [
     "typhonjs",
