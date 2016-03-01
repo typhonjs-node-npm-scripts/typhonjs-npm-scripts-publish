@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-npm-scripts-publish",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "homepage": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish",
   "description": "Provides NPM scripts for pre-publish and publish actions for TyphonJS NPM modules and beyond.",
   "license": "MPL-2.0",
