@@ -24,7 +24,7 @@ To configure the prepublish script provide this entry in `package.json` scripts 
 
 ```
   "devDependencies": {
-    "typhonjs-npm-scripts-publish": "^0.0.5"
+    "typhonjs-npm-scripts-publish": "^0.0.7"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
