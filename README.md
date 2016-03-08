@@ -24,7 +24,7 @@ To configure the prepublish script provide this entry in `package.json` scripts 
 
 ```
   "devDependencies": {
-    "typhonjs-npm-scripts-publish": "^0.0.7"
+    "typhonjs-npm-scripts-publish": "^0.0.9"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
@@ -42,7 +42,7 @@ Usually two tasks that are helpful when publishing ES6 NPM modules is ensuring a
 {
    "publish":
    {
-      "prepublish": { "scripts": [ "npm run test", "npm run build" ] }
+      "prepublish": { "scripts": [ "npm run eslint", "npm run test", "npm run build" ] }
    }
 }
 ```
