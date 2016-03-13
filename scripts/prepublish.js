@@ -22,6 +22,7 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    var stripJsonComments = require('strip-json-comments');
 
    // Verify that `.npmscriptrc` exists.
+   /* istanbul ignore next */
    try
    {
       if (!fs.statSync('./.npmscriptrc').isFile())
@@ -38,6 +39,7 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    var configInfo = JSON.parse(stripJsonComments(fs.readFileSync('./.npmscriptrc', 'utf-8')));
 
    // Verify that publish entry is an object.
+   /* istanbul ignore if */
    if (typeof configInfo.publish !== 'object')
    {
       throw new Error(
@@ -46,6 +48,7 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    }
 
    // Verify that prepublish entry is an object.
+   /* istanbul ignore if */
    if (typeof configInfo.publish.prepublish !== 'object')
    {
       throw new Error(
@@ -56,12 +59,14 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
    var prepublishConfig = configInfo.publish.prepublish;
 
    // Verify scripts entry exists
+   /* istanbul ignore if */
    if (typeof prepublishConfig.scripts === 'undefined')
    {
       throw new Error(
        "TyphonJS NPM script (prepublish) error: 'publish.prepublish.scripts' entry is missing in '.npmscriptrc'.");
    }
 
+   /* istanbul ignore if */
    if (!Array.isArray(prepublishConfig.scripts))
    {
       throw new Error(
