@@ -2,10 +2,10 @@
 
 [![NPM](https://img.shields.io/npm/v/typhonjs-npm-scripts-publish.svg?label=npm)](https://www.npmjs.com/package/typhonjs-npm-scripts-publish)
 [![Code Style](https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat)](https://en.wikipedia.org/wiki/Indent_style#Allman_style)
-[![License](https://img.shields.io/badge/license-MPLv2-yellowgreen.svg?style=flat)](https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MPLv2-yellowgreen.svg?style=flat)](https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish/blob/master/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/typhonjs/TyphonJS.svg)](https://gitter.im/typhonjs/TyphonJS)
 
-[![Build Status](https://travis-ci.org/typhonjs-node-npm/typhonjs-npm-scripts-publish.svg?branch=master)](https://travis-ci.org/typhonjs-node-npm/typhonjs-npm-scripts-publish)
+[![Build Status](https://travis-ci.org/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish.svg?branch=master)](https://travis-ci.org/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish)
 [![Dependency Status](https://www.versioneye.com/user/projects/56cea7106b21e500355b1140/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56cea7106b21e500355b1140)
 
 Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules and beyond.
@@ -16,7 +16,7 @@ actual pre-publish actions. NPM module [in-publish](https://www.npmjs.com/packag
 
 This NPM module runs all scripts defined in the `publish.prepublish.scripts` entry located in `.npmscriptrc` in the root path of a project. 
 
-For a comprehensive ES6 build / testing NPM module please see [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test) as it combines this module for pre-publish detection along with [typhonjs-npm-scripts-build-babel](https://www.npmjs.com/package/typhonjs-npm-scripts-build-babel) and [typhonjs-npm-scripts-test-mocha](https://www.npmjs.com/package/typhonjs-npm-scripts-test-mocha). For a full listing of all TyphonJS NPM script modules available please see [typhonjs-node-npm](https://github.com/typhonjs-node-npm) organization on GitHub.
+For a comprehensive ES6 build / testing / publishing NPM module please see [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test) as it combines this module along with transpiling ES6 sources with Babel, pre-publish script detection, ESDoc dependencies, testing with Mocha / Istanbul and an Istanbul instrumentation hook for JSPM / SystemJS tests. For a full listing of all TyphonJS NPM script modules available please see [typhonjs-node-npm-scripts](https://github.com/typhonjs-node-npm-scripts) organization on GitHub.
 
 ------
 
@@ -24,7 +24,7 @@ To configure the prepublish script provide this entry in `package.json` scripts 
 
 ```
   "devDependencies": {
-    "typhonjs-npm-scripts-publish": "^0.0.9"
+    "typhonjs-npm-scripts-publish": "^0.0.11"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
