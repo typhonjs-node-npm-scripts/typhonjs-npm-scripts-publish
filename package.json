@@ -1,7 +1,7 @@
 {
   "name": "typhonjs-npm-scripts-publish",
-  "version": "0.0.9",
-  "homepage": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish",
+  "version": "0.0.10",
+  "homepage": "https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish",
   "description": "Provides NPM scripts for pre-publish and publish actions for TyphonJS NPM modules and beyond.",
   "license": "MPL-2.0",
   "author": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish/typhonjs-npm-scripts-publish.git"
+    "url": "https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish/typhonjs-npm-scripts-publish.git"
   },
   "maintainers": [
     {
@@ -44,6 +44,6 @@
   ],
   "directories": {},
   "bugs": {
-    "url": "https://github.com/typhonjs-node-npm/typhonjs-npm-scripts-publish/issues"
+    "url": "https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish/issues"
   }
 }
