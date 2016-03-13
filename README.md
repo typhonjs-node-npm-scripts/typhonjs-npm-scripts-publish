@@ -6,7 +6,7 @@
 [![Gitter](https://img.shields.io/gitter/room/typhonjs/TyphonJS.svg)](https://gitter.im/typhonjs/TyphonJS)
 
 [![Build Status](https://travis-ci.org/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish.svg?branch=master)](https://travis-ci.org/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish)
-[![Dependency Status](https://www.versioneye.com/user/projects/56cea7106b21e500355b1140/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56cea7106b21e500355b1140)
+[![Dependency Status](https://www.versioneye.com/user/projects/56e5a1b8df573d003a5f5f8b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e5a1b8df573d003a5f5f8b)
 
 Provides NPM scripts for pre-publish & publish actions for TyphonJS NPM modules and beyond.
 
@@ -24,7 +24,7 @@ To configure the prepublish script provide this entry in `package.json` scripts 
 
 ```
   "devDependencies": {
-    "typhonjs-npm-scripts-publish": "^0.0.11"
+    "typhonjs-npm-scripts-publish": "^0.0.12"
   },
   "scripts": {
     "prepublish": "node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
