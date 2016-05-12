@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish/typhonjs-npm-scripts-publish.git"
+    "url": "https://github.com/typhonjs-node-npm-scripts/typhonjs-npm-scripts-publish.git"
   },
   "maintainers": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "dependencies": {
-    "fs-extra": "^0.26.0",
+    "fs-extra": "^0.30.0",
     "in-publish": "^2.0.0",
     "strip-json-comments": "^2.0.0"
   },
