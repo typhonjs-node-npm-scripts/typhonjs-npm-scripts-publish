@@ -1,4 +1,4 @@
-![typhonjs-npm-scripts-publish](http://i.imgur.com/2vSMiDl.png)
+![typhonjs-npm-scripts-publish](https://i.imgur.com/2vSMiDl.png)
 
 [![NPM](https://img.shields.io/npm/v/typhonjs-npm-scripts-publish.svg?label=npm)](https://www.npmjs.com/package/typhonjs-npm-scripts-publish)
 [![Code Style](https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat)](https://en.wikipedia.org/wiki/Indent_style#Allman_style)
