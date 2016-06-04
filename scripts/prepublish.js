@@ -17,71 +17,7 @@ var inPublish =   require('in-publish').inPublish();
 
 if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
 {
-   var cp =                require('child_process');
-   var fs =                require('fs');
-   var stripJsonComments = require('strip-json-comments');
+   var runner =   require('typhonjs-npm-scripts-runner');
 
-   // Verify that `.npmscriptrc` exists.
-   /* istanbul ignore next */
-   try
-   {
-      if (!fs.statSync('./.npmscriptrc').isFile())
-      {
-         throw new Error("'.npmscriptrc' not found in root path.");
-      }
-   }
-   catch(err)
-   {
-      throw new Error("TyphonJS NPM script (prepublish) error: " + err);
-   }
-
-   // Load `.npmscriptrc` and strip comments.
-   var configInfo = JSON.parse(stripJsonComments(fs.readFileSync('./.npmscriptrc', 'utf-8')));
-
-   // Verify that publish entry is an object.
-   /* istanbul ignore if */
-   if (typeof configInfo.publish !== 'object')
-   {
-      throw new Error(
-       "TyphonJS NPM script (prepublish) error: 'publish' entry is not an object or is missing in "
-       + "'.npmscriptrc'.");
-   }
-
-   // Verify that prepublish entry is an object.
-   /* istanbul ignore if */
-   if (typeof configInfo.publish.prepublish !== 'object')
-   {
-      throw new Error(
-       "TyphonJS NPM script (prepublish) error: 'publish.prepublish' entry is not an object or is missing in "
-        + "'.npmscriptrc'.");
-   }
-
-   var prepublishConfig = configInfo.publish.prepublish;
-
-   // Verify scripts entry exists
-   /* istanbul ignore if */
-   if (typeof prepublishConfig.scripts === 'undefined')
-   {
-      throw new Error(
-       "TyphonJS NPM script (prepublish) error: 'publish.prepublish.scripts' entry is missing in '.npmscriptrc'.");
-   }
-
-   /* istanbul ignore if */
-   if (!Array.isArray(prepublishConfig.scripts))
-   {
-      throw new Error(
-       "TyphonJS NPM script (prepublish) error: 'publish.prepublish.scripts' entry is not an array in "
-        + "'.npmscriptrc'.");
-   }
-
-   // Execute scripts
-   for (var cntr = 0; cntr < prepublishConfig.scripts.length; cntr++)
-   {
-      // Build base execution command.
-      var exec = prepublishConfig.scripts[cntr];
-
-      // Notify what command is being executed then execute it.
-      process.stdout.write('Prepublish executing: ' + exec + '\n');
-      cp.execSync(exec, { stdio: 'inherit' });
-   }
+   runner.run('.npmscriptrc', 'publish.prepublish.scripts', 'Prepublish');
 }
