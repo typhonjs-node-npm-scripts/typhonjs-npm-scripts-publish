@@ -14,6 +14,8 @@ Node / NPM currently has a bug (https://github.com/npm/npm/issues/10074) that wi
 `prepublish` script when modules are installed or `npm pack` is executed. In these cases it is not desirable to run
 actual pre-publish actions. NPM module [in-publish](https://www.npmjs.com/package/in-publish) provides pre-publish detection and is used by this module to detect the actual pre-publish script action when `npm publish` is executed.
 
+Please also take note of this [major NPM publish bug](https://github.com/npm/npm/issues/5082) that affects a wide range of Node / NPM versions. Basically, there is a chance that publishing may omit files. It has bitten TyphonJS NPM module publishing many times.
+
 This NPM module runs all scripts defined in the `publish.prepublish.scripts` entry located in `.npmscriptrc` in the root path of a project. 
 
 For a comprehensive ES6 build / testing / publishing NPM module please see [typhonjs-npm-build-test](https://www.npmjs.com/package/typhonjs-npm-build-test) as it combines this module along with transpiling ES6 sources with Babel, pre-publish script detection, ESDoc dependencies, testing with Mocha / Istanbul and an Istanbul instrumentation hook for JSPM / SystemJS tests. For a full listing of all TyphonJS NPM script modules available please see [typhonjs-node-npm-scripts](https://github.com/typhonjs-node-npm-scripts) organization on GitHub.
