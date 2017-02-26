@@ -1,3 +1,6 @@
+## 0.4.0 (2017-02-25)
+- .npmscriptrc.js in addition to .npmscriptrc is now supported. 
+
 ## 0.3.0 (2017-02-18)
 - Upgraded dependencies:
 - typhonjs-npm-scripts-runner: ^0.3.0
