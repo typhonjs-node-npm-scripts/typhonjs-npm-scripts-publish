@@ -6,6 +6,6 @@
 {
    "publish":
    {
-      "prepublish": { "scripts": ["node ./test/scripts/fixture.js"] }
+      "prepublish": { "scripts": ["node ./test/data/fixture.js"] }
    }
 }

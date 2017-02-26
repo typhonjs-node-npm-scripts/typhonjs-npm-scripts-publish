@@ -19,5 +19,5 @@ if (inPublish || process.env.NPM_IN_PUBLISH_TEST)
 {
    var runner =   require('typhonjs-npm-scripts-runner');
 
-   runner.run('.npmscriptrc', 'publish.prepublish.scripts', 'Prepublish');
+   runner.run(['.npmscriptrc', '.npmscriptrc.js'], 'publish.prepublish.scripts', 'Prepublish');
 }
